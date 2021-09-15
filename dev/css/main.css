@@ -1,5 +1,8 @@
-/*nav bar*/
 
+/*nav bar*/
+div#navbarNav{
+  margin-right: 140px;
+}
 .top-header{
   padding-top: 1rem;
   background-color: #22577A;
@@ -9,4 +12,31 @@
 }
 .top-header img{
   padding-right: 0.1rem;
+}
+
+
+/*Iconos de los items navbar*/
+.icon img{
+  width: 27px;
+  height: 27px;
+}
+/*--Colores items navbar*/
+div#acerca_de{
+  background-color: #57CC99;
+}
+div#pagina_principal{
+  background-color: #38A3A5;
+}
+div#comunidad{
+  background-color: #38A3A5;
+}
+/*--Estetica navbar items*/
+.button_nav{
+  border-radius: 4px;
+  width: 250px;
+  justify-content: center;
+}
+.nav-text-item{
+  padding-right: 10px;
+
 }
