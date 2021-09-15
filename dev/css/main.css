@@ -1,0 +1,12 @@
+/*nav bar*/
+
+.top-header{
+  padding-top: 1rem;
+  background-color: #22577A;
+  color: #fff;
+  font-size: 48px;
+  line-height: 16px;
+}
+.top-header img{
+  padding-right: 0.1rem;
+}
