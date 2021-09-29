@@ -41,56 +41,7 @@ div#comunidad{
 
 }
 
-.head_content {
-  width: 100%;
-  height: 250px;
-  background: url("http://aprendiot.com/assets/media/iot_1.jpg") no-repeat center ;
-  background-size: cover;
-  
-}
-.head_content h1{
-  color: #fff;
-  background-color:#608801;
-  width: fit-content;
-  margin-left: 60px;
-  padding: 10px;
-  border-radius: 10px;
-}
-.atribution{
-  color: #fff;
-  margin-left: 70px ;
-}
-.content_text{
-  margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 10%
-}
-.content_text p{
-  font-size: 22px;
-}
-.content_text img{
-  width: 100%;
-}
-.nav_buttons{
-  margin-right: 10%;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.nav_buttons button{
-  margin-right: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  color: #fff;
-}
-  #next_button{
-    background-color: #608801;
-  }
-  #back_button{
-    background-color: #22577A;
-  }
-/*Acerca de*/
 
-.team article div img{
-  width: 150px;
-  border-radius: 100px;
-}
+
+
+
