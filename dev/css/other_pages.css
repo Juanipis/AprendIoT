@@ -4,3 +4,21 @@
   width: 150px;
   border-radius: 100px;
 }
+
+/*Perfil*/
+.perfil .row .col img{
+  
+  height: 100px;
+}
+.col .star{
+  text-align: center;
+}
+#puntaje{
+  border-style: solid;
+  border-radius: 100px;
+  border-width: 2px;
+}
+#nombre{
+  text-align: center;
+  font-size: 200%;
+}
