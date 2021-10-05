@@ -65,28 +65,22 @@
       </nav>
     </header>
     
-    <section class="container perfil mt-3  justify-content-center" style="max-width: 1000px;">
-      <div class="row">
-        <div class="d-flex col mt-1 justify-content-center">
-          <img class="rounded-circle" id="foto_perfil" src="./assets/img/blank-profile-picture-973460.svg" alt="Foto perfil">
+    <section class="d-flex perfil justify-content-center mt-3">
+      <img class="rounded-circle mx-3" id="foto_perfil" src="./assets/img/blank-profile-picture-973460.svg" alt="Foto perfil">
+      <div class="col d-flex flex-column text" style="max-width:300px">
+        <div class="d-flex" style="width: 300px; height:30px;" id="puntaje">
+          <div class="col star" id="star_1">🌑</div>
+          <div class="col star" id="star_2">🌑</div>
+          <div class="col star" id="star_3">🌑</div>
+          <div class="col star" id="star_4">🌑</div>
+          <div class="col star" id="star_5">🌑</div>
         </div>
-        <div class="col mx-5">
-          <div class="row " id="puntaje">
-            <div class="col star" id="star_1">🌑</div>
-            <div class="col star" id="star_2">🌑</div>
-            <div class="col star" id="star_3">🌑</div>
-            <div class="col star" id="star_4">🌑</div>
-            <div class="col star" id="star_5">🌑</div>
-          </div>
-          <div class="row justify-content-center" >
-            <strong style="text-align: center">Puntaje</strong> 
-          </div>
-          <div class="row justify-content-center " id="nombre">
-            John Doe
-          </div>
-        </div>
+        <strong>Puntaje</strong>
+        <h1 class="mt-0">John Doe</h1>
       </div>
+      
     </section>
+
 
     <section class="container progreso mt-3" style="max-width: 600px;">
       <div class="row justify-content-center fs-5 fw-bold">Progreso</div>

@@ -6,11 +6,11 @@
 }
 
 /*Perfil*/
-.perfil .row .col img{
+.perfil  img{
   
   height: 100px;
 }
-.col .star{
+.perfil .text{
   text-align: center;
 }
 #puntaje{
