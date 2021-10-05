@@ -15,6 +15,7 @@
 }
 #puntaje{
   border-style: solid;
+  border-color: blue;
   border-radius: 100px;
   border-width: 2px;
 }
