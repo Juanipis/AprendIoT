@@ -1,16 +1,18 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" id="main">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/icons/logo_aprendIoT.ico" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>AprendIoT</title>
   </head>
-  <body>
+  <body id="main_body">
     <header>
       <div class="top-header d-flex justify-content-center">
         <img class="align-self-center" src="./assets/icons/logo_aprendIoT.svg" alt="Logo AprendIoT">
@@ -87,6 +89,7 @@
       </nav>
     </header>
 
+
   <!-- Modal SingUp -->
   <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -139,10 +142,19 @@
     </div>
   </div>
 
-
     
-    
-    
+    <section class="column" style="margin-top: 10%;" >
+      <section class="index_content row justify-content-center align-items-center">
+        <img src="https://cdn.pixabay.com/photo/2021/08/29/13/19/kingfisher-6583229_960_720.jpg" style="width: 300px; height: 300px;" alt="">
+        <article class="text d-flex flex-column">
+          <h1>Aprende sobre el internet de las cosas con <p class="pt-4"><strong><img src="./assets/icons/logo_aprendIoT.svg" alt=""> AprendIoT</p></strong></h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid labore accusamus deserunt molestias libero, numquam illum, perferendis architecto aspernatur odit exercitationem ea voluptates quos placeat vitae. Voluptate, tempora repellendus.s</p>
+        </article>
+      </section>
+      <section class="row justify-content-center" style="width: 100%;" >
+        <button class="m-4 rounded" id="start_button" onclick="window.location.href='./ova/introduccion.html'" ><strong>Aprende ahora</strong></button>
+      </section>
+    </section>
     
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
