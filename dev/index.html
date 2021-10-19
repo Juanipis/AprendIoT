@@ -64,17 +64,13 @@
                 <!-- Button trigger modal -->
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item logged-out mx-2 my-2" style="display: none;">
-                    <!-- Button trigger modal signIn -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signinModal" style="background-color: #4CAF50;">
-                      Ingreso
+                    
+                    <button id="googleLogin" style="background: none; border: none;">
+                      <img src="./assets/icons/google_button.svg" id="google-login" alt="Google login">
                     </button>
+                    
                   </li>
-                  <li class="nav-item logged-out mx-2 my-2" style="display: none;">
-                    <!-- Button trigger modal signUp -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-                      Registro
-                    </button>
-                  </li>
+                  
                   <li class="nav-item logged-in mx-2" style="display: none;">
                     <!-- Button trigger modal logOut -->
                     <button type="button" id="logout" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: blueviolet;">
@@ -89,58 +85,6 @@
       </nav>
     </header>
 
-
-  <!-- Modal SingUp -->
-  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>Registro</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="signup-form">
-            <div class="form-group">
-              <input type="text" id="signup-email" class="form-control" placeholder="Correo" required>
-            </div>
-            <div class="form-group">
-              <input type="password" id="signup-password" class="form-control" placeholder="Contraseña" required>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Registro</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-</div>
-
-  <!-- Modal SignIn -->
-  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignin" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>Ingreso</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="login-form">
-            <div class="form-group">
-              <input type="text" id="login-email" class="form-control" placeholder="Correo" required>
-            </div>
-            <div class="form-group">
-              <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-secondary btn-block">Ingreso</button>
-              <button type="button" class="btn btn-info btn-block" id="googleLogin">Ingreso con Google</button>
-            </div>
-          </form>
-        </div>
-      
-      </div>
-    </div>
-  </div>
 
     
     <section class="column" style="margin-top: 10%;" >
