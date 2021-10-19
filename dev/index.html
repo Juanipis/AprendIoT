@@ -58,16 +58,122 @@
                   </div>
                 </a>
               </li>
+              <li class="d-flex flex-column mx-3 ">
+                <!-- Button trigger modal -->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item logged-out mx-2 my-2" style="display: none;">
+                    <!-- Button trigger modal signIn -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signinModal" style="background-color: #4CAF50;">
+                      Ingreso
+                    </button>
+                  </li>
+                  <li class="nav-item logged-out mx-2 my-2" style="display: none;">
+                    <!-- Button trigger modal signUp -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                      Registro
+                    </button>
+                  </li>
+                  <li class="nav-item logged-in mx-2" style="display: none;">
+                    <!-- Button trigger modal logOut -->
+                    <button type="button" id="logout" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: blueviolet;">
+                      Cerrrar sesión
+                    </button>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <h1>Pagina principal :)</h1>
+
+  <!-- Modal SingUp -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Registro</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signup-form">
+            <div class="form-group">
+              <input type="text" id="signup-email" class="form-control" placeholder="Correo" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="signup-password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Registro</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- Modal SignIn -->
+  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignin" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Ingreso</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="login-form">
+            <div class="form-group">
+              <input type="text" id="login-email" class="form-control" placeholder="Correo" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="login-password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-secondary btn-block">Ingreso</button>
+              <button type="button" class="btn btn-info btn-block" id="googleLogin">Ingreso con Google</button>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
 
     
     
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- SDK FIREBASE -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <!-- Don't change the format for any other products. -->
+    <!-- etc. -->
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCu3IiwrAFGOejTXa5Fcmxbu4KNNu8XcaQ",
+        authDomain: "aprendiot.firebaseapp.com",
+        projectId: "aprendiot",
+        storageBucket: "aprendiot.appspot.com",
+        messagingSenderId: "563370566817",
+        appId: "1:563370566817:web:d4e7467105b0564ef5bce0",
+        measurementId: "G-82QECYBVVP"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const fs = firebase.firestore();
+    </script> 
+    <script src="./js/login.js"></script>
+
   </body>
 </html>
