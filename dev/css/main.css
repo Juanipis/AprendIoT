@@ -41,6 +41,13 @@ div#comunidad{
 
 }
 
+img#google-login{
+  background-color: #0060FF;
+}
+
+img#google-login:hover{
+  box-shadow: 0px 10px 10px -6px black;
+}
 
 
 
