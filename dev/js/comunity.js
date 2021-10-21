@@ -50,12 +50,19 @@ window.addEventListener('DOMContentLoaded', async (e) =>{
         busqueda_aportes(listaAportes[index]);
       }
     });
-
-    
-
-    
-
 })
+
+function sendEmail() {
+  var subject= "Comentarios sobre AprendIoT";
+  var body = document.getElementById("comentarios").value;
+  var uri = "mailto:natynaro@gmail.com;drones9182@gmail.com;juanipis@gmail.com?subject=";
+  uri += encodeURIComponent(subject);
+  uri += "&body=";
+  uri += encodeURIComponent(body);
+  window.open(uri);
+  document.getElementById("comentarios").value = "";
+  alert("¡Gracias por tus comentarios! 💌")
+}
 
 
 
