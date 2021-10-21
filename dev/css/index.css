@@ -44,3 +44,11 @@ button#start_button:focus{
   border: 2px solid #57CC99;
   background-color: #4CAF50;
 }
+
+img#google-login{
+  background-color: #0060FF;
+}
+
+img#google-login:hover{
+  box-shadow: 0px 10px 10px -6px black;
+}

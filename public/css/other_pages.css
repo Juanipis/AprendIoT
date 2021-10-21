@@ -4,3 +4,6 @@
   width: 150px;
   border-radius: 100px;
 }
+.text{
+  max-width: 500px;
+}
