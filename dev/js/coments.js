@@ -20,8 +20,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
 
 const saveAport = (content_user ,content_user_form) =>
-  
-  fs.collection("contenido").doc(nombre_pagina).collection("aportes").doc().set({
+  fs.collection("contenido").doc(nombre_pagina).collection("aportes").add({
     name: content_user,
     contenido:  content_user_form,
     foto: routeImage,
@@ -33,6 +32,10 @@ const saveAport = (content_user ,content_user_form) =>
 const getAport = () => fs.collection("contenido").doc(nombre_pagina).collection("aportes").get();
 
 window.addEventListener('DOMContentLoaded', async (e) =>{
+  fs.collection("contenido").doc(nombre_pagina).set({
+    name: nombre_pagina,
+    date: hoy
+  })
   const querySnapshot = await getAport();
   querySnapshot.forEach(doc => {
     content_aports.innerHTML += `<div class="d-flex border mt-3 justify-content-around align-items-center">

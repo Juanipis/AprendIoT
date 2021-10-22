@@ -45,6 +45,7 @@ window.addEventListener('DOMContentLoaded', async (e) =>{
   fs.collection("contenido").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         listaAportes.push(doc.id);
+        console.log(doc.id)
       });
       for(index in listaAportes){
         busqueda_aportes(listaAportes[index]);
