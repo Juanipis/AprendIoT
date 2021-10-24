@@ -43,6 +43,11 @@
   background-size: cover;
 }
 
+#banner_despedida{
+  background: url("../assets/media/smart-microchip.jpg") no-repeat center ;
+  background-size: cover;
+}
+
 .head_content h1{
   color: #fff;
   width: fit-content;
@@ -80,6 +85,10 @@
 #header_lab{
   background-color:#a13c1d;
 }
+#header_despedida{
+  background-color:#0b68d3;
+}
+
 .atribution{
   color: #fff;
   margin-left: 70px ;
