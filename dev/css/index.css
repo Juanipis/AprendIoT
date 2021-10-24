@@ -26,6 +26,10 @@ body#main_body{
 .index_content .text h1{
   color: #fff;
 }
+.index_content .text p{
+  font-size: large;
+  color: #fff;
+}
 button#start_button{
   width: 200px;
   height: 50px;
