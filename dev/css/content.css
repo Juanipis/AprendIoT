@@ -33,6 +33,10 @@
   background-size: cover;
 }
 
+#banner_apli_iot{
+  background: url("../assets/media/banner_apl_iot.jpg") no-repeat center ;
+  background-size: cover;
+}
 
 .head_content h1{
   color: #fff;
@@ -64,6 +68,9 @@
 
 #header_iot{
   background-color:#016888;
+}
+#header_apli_iot{
+  background-color:#a13c1d;
 }
 
 .atribution{
