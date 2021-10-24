@@ -28,6 +28,12 @@
   background-size: cover;
 }
 
+#banner_iot{
+  background: url("../assets/media/banner_iot.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+
 .head_content h1{
   color: #fff;
   width: fit-content;
@@ -53,6 +59,10 @@
 }
 
 #header_Nube{
+  background-color:#016888;
+}
+
+#header_iot{
   background-color:#016888;
 }
 
