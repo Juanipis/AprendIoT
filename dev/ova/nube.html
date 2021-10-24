@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/content.css">
-    <title>AprendIoT - 🚀Introduccion</title>
+    <title>AprendIoT - ☁️Nube</title>
   </head>
   <body>
     <header>
@@ -20,7 +20,7 @@
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #22577A;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html" style="color: white;">
+          <a class="navbar-brand" href="#" style="color: white;">
             <img src="../assets/icons/logo_aprendIoT.svg" alt="Logo AprendIoT" width="30" height="24" class="d-inline-block align-text-top">
             AprendIoT
           </a>
@@ -60,59 +60,44 @@
                   </div>
                 </a>
               </li>
-              <li class="d-flex flex-column mx-3 ">
-                <!-- Button trigger modal -->
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item logged-out mx-2 my-2" style="display: none;">
-                    
-                    <button id="googleLogin" style="background: none; border: none;">
-                      <img src="../assets/icons/google_button.svg" id="google-login" alt="Google login">
-                    </button>
-                    
-                  </li>
-                  
-                  <li class="nav-item logged-in mx-2" style="display: none;">
-                    <!-- Button trigger modal logOut -->
-                    <button type="button" id="logout" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: blueviolet;">
-                      Cerrrar sesión
-                    </button>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section id = "banner_Introduccion" class="d-flex flex-column-reverse head_content">
-      <a class="atribution" href='https://www.freepik.com/vectors/coffee'>Coffee vector created by macrovector - www.freepik.com</a>
-      <h1 id = "header_Introduccion" >🚀Introducción al internet de las cosas</h1>
+    <section id = "banner_Nube" class="d-flex flex-column-reverse head_content">
+      <a href='https://www.freepik.es/fotos/negocios'>Foto de Negocios creado por natanaelginting - www.freepik.es</a>
+      <h1 id = "header_Nube">☁️ Nube</h1>
     </section>
     <section class="d-flex flex-column content_text">
       <p>
-        En un mundo globalizado conectado a internet y acceso 
-        a todo el conocimiento de la humanidad en nuestras manos, 
-        día a día nacen nuevas tecnologías por la necesidad de 
-        resolver un problema o hacernos la vida más fácil, ahí es 
-        cuando entra el Internet de las cosas comúnmente abreviado 
-        <strong>IoT</strong> ("Internet of things" en español, "Internet de las cosas").
+        Anteriormente hablábamos sobre el internet y uno de los puntos 
+        que nos faltaba tocar es el concepto de "nube", seguramente 
+        alguna vez has utilizado Whatsapp, resulta que para enviar 
+        mensajes desde tu dispositivo a otro se utilizan muchos 
+        computadores conectados entre sí funcionando todo el tiempo, si 
+        se enviaran mensajes de manera directa sin pasar por estos 
+        servidores tendrías que conseguir la dirección IP pública de tu 
+        amigo o amiga para chatear y eso conlleva sus riesgos además de 
+        que es poco práctico.
       </p>
-      <p>Imagina entrar a tu casa luego de un largo día de trabajo, te 
-        sientas, pero olvidaste encender la cafetera y amas el café, no te 
-        quieres levantar, así que le dices a tu celular "Enciende la 
-        cafetera" y en unos minutos solo tendrás que ir a tomártelo.
-      </p>
-      <img src="../assets/media/Introduccion_IoT.jpg" alt="Ejemplo IoT">
-      <a href='https://www.freepik.es/vectores/abstracto'>Vector de Abstracto creado por macrovector - www.freepik.es</a>
-      <p>Esa es la promesa, un mundo donde todos tus electrodomésticos estén conectados a internet.</p>
-      <p>¿Estás listo para lo que viene?</p>
-    </section>
+      <article class = "d-flex justify-content-center">
+        <div class = "d-flex flex-column" >
+          <img src="../assets/media/servers_1.png" alt="Servidores de datos de Google" style="max-width: 500px;">
+          <p>Servidores de datos de Google, de <a href="https://bit.ly/3AJSVJq">Libertad Digital</a></p>
+        </div>
+      </article>
 
+      <p>
+        Como ves en la imagen anterior, cada vez que haces una consulta en Google esta viene a 
+        estos servidores, muchísimos computadores conectados entre sí que de manera ultrarrápida buscan 
+        lo que necesitas para resolver tus dudas del día a día.
+      </p>
+    </section>
     <section class="nav_buttons d-flex flex-row-reverse">
-      <a href="./internet.html"><button id="next_button">Siguiente</button></a>
+      <a href="./iot.html"><button id="next_button">Siguiente</button></a>
+      <a href="./sensores.html"><button id="back_button">Anterior</button></a>
     </section>
-
-    <hr>
     
     <form id="content-form" class="d-flex justify-content-center mx-3 mt-5 align-items-center" >
       <div class="form-group" style="width:600px;max-width:600px; min-width:100px">
@@ -129,7 +114,7 @@
     
     
   
-    
+    <hr>
 
 
       </div>
@@ -169,10 +154,9 @@
     </script>
 
     <script>
-      const nombre_pagina = 'Introducción al internet de las cosas';
+      const nombre_pagina = 'La nube';
     </script>
     <script src="../js/login.js"></script>
     <script src="../js/coments.js"></script>
-    
   </body>
 </html>
