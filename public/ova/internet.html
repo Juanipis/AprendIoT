@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/content.css">
-    <title>AprendIoT - 🚀Introduccion</title>
+    <title>AprendIoT - 🌐Internet</title>
   </head>
   <body>
     <header>
@@ -20,7 +20,7 @@
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #22577A;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html" style="color: white;">
+          <a class="navbar-brand" href="#" style="color: white;">
             <img src="../assets/icons/logo_aprendIoT.svg" alt="Logo AprendIoT" width="30" height="24" class="d-inline-block align-text-top">
             AprendIoT
           </a>
@@ -60,60 +60,80 @@
                   </div>
                 </a>
               </li>
-              <li class="d-flex flex-column mx-3 ">
-                <!-- Button trigger modal -->
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item logged-out mx-2 my-2" style="display: none;">
-                    
-                    <button id="googleLogin" style="background: none; border: none;">
-                      <img src="../assets/icons/google_button.svg" id="google-login" alt="Google login">
-                    </button>
-                    
-                  </li>
-                  
-                  <li class="nav-item logged-in mx-2" style="display: none;">
-                    <!-- Button trigger modal logOut -->
-                    <button type="button" id="logout" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: blueviolet;">
-                      Cerrrar sesión
-                    </button>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section id = "banner_Introduccion" class="d-flex flex-column-reverse head_content">
-      <a class="atribution" href='https://www.freepik.com/vectors/coffee'>Coffee vector created by macrovector - www.freepik.com</a>
-      <h1 id = "header_Introduccion" >🚀Introducción al internet de las cosas</h1>
+    <section id = "banner_Internet" class="d-flex flex-column-reverse head_content">
+      <a href="https://www.freepik.es/vectores/tecnologia">Vector de Tecnología creado por starline - www.freepik.es</a>
+      <h1 id = "header_Internet">🌐Internet</h1>
     </section>
     <section class="d-flex flex-column content_text">
+      <h2>Internet</h2>
       <p>
-        En un mundo globalizado conectado a internet y acceso 
-        a todo el conocimiento de la humanidad en nuestras manos, 
-        día a día nacen nuevas tecnologías por la necesidad de 
-        resolver un problema o hacernos la vida más fácil, ahí es 
-        cuando entra el Internet de las cosas comúnmente abreviado 
-        <strong>IoT</strong> ("Internet of things" en español, "Internet de las cosas").
+        Es una red que nos conecta a todos a través de cables submarinos, 
+        satélites, antenas y sirve para enviar y recibir información.
+        Seguramente ya habrás usado esta tecnología aluna vez, y bueno,
+        si estás leyendo esto de seguro en tu casa hay un <strong>rúter</strong>
+        de internet, ese <strong>rúter</strong> se conecta a un cable 
+        <strong>coaxial</strong> o de <strong>fibra óptica</strong>, este 
+        sale fuera de tu casa y pasa por los postes de energía, llega a un 
+        edificio de tu proveedor de internet, de este sale un cable aún más 
+        grande que llega a una de las costas de tu país y de ahí un mucho, 
+        mucho más grande que se conecta a otros países, continentes e islas 
+        buscando el <strong>servidor</strong> o <strong>centro de datos</strong> 
+        que contiene a esta página web.
+        <img src="../assets/media/diagrama_Internet.png" alt="Diagrama internet">
+        <article class = "d-flex"> 
+          <div class = "d-flex flex-column">
+            <img src="../assets/media/fibra_Optica.png" alt="Fibra óptica" >
+            <div>Cable submarino, de <a  href="https://www.adslzone.net/reportajes/internet/mapa-cables-submarinos/">adslzone</a></div>
+          </div>
+          <div class = "d-flex flex-column">
+            <img class="mx-5" src="../assets/media/cables_Submarinos.png" alt="Cables submarinos">
+            <div class = "mx-5">Mapa de cables submarinos alrededor del mundo, de <a href="https://www.submarinecablemap.com"> submarinecablemap</a></div>            
+          </div>
+        </article>
       </p>
-      <p>Imagina entrar a tu casa luego de un largo día de trabajo, te 
-        sientas, pero olvidaste encender la cafetera y amas el café, no te 
-        quieres levantar, así que le dices a tu celular "Enciende la 
-        cafetera" y en unos minutos solo tendrás que ir a tomártelo.
+      <p></p>
+      <h2>Direcciones IP (Internet protocol)</h2>
+      <p>
+        En tu hogar, el dispositivo que provee internet a los demás es el rúter,
+        una cajita negra que generalmente tiene antenas a su alrededor y puertos
+        para conectar por cables algunos dispositivos, además tiene una labor
+        adicional, asigna a cada dispositivo una <strong>dirección IP</strong>
+        que le permite saber a quién le envía información.
       </p>
-      <img src="../assets/media/Introduccion_IoT.jpg" alt="Ejemplo IoT">
-      <a href='https://www.freepik.es/vectores/abstracto'>Vector de Abstracto creado por macrovector - www.freepik.es</a>
-      <p>Esa es la promesa, un mundo donde todos tus electrodomésticos estén conectados a internet.</p>
-      <p>¿Estás listo para lo que viene?</p>
+      <article class = "d-flex justify-content-center">
+        <div class = "d-flex flex-column" >
+          <img src="../assets/media/direcciones_IP.png" alt="Ejemplo direcciones IP" style="max-width: 500px;">
+          Rúter y direcciones IP, creación propia.
+        </div>
+      </article>      
+      <p>
+        Por ejemplo, invitaste a tus amigos a cenar a tu nueva casa y como es la
+        primera vez que vienen te piden la clave del internet, cuando se la das
+        notas que por un momento el celular dice "obteniendo dirección IP" 
+        esto quiere decir que el rúter se sincroniza con el celular para cuando
+        él pida una imagen no se la envíe al televisor y así poder ver el meme
+        que vió en una red social, esta sería una dirección IP privada.
+      </p>
+      <p>
+        Así, cualquier dispositivo que se conecte a la red desde que haya espacio,
+        tendrá una dirección IP única así como el rúter tiene una dirección IP 
+        propia para conectarse a los demás rúters alrededor del mundo mediante 
+        una dirección IP pública, puedes comprobar la tuya ingresando al siguiente 
+        enlace <a href=" https://www.cual-es-mi-ip.net/">https://www.cual-es-mi-ip.net/</a>
+      </p>
     </section>
-
     <section class="nav_buttons d-flex flex-row-reverse">
-      <a href="./internet.html"><button id="next_button">Siguiente</button></a>
+      <a href="./sensores.html"><button id="next_button">Siguiente</button></a>
+      <a href="./introduccion.html"><button id="back_button">Anterior</button></a>
     </section>
-
+    <!-- Bootstrap JavaScript -->
     <hr>
-    
+
     <form id="content-form" class="d-flex justify-content-center mx-3 mt-5 align-items-center" >
       <div class="form-group" style="width:600px;max-width:600px; min-width:100px">
         <label id="aport-body" for="exampleFormControlTextarea1"> <h3>Escribe aquí tu aporte</h3></label>
@@ -126,13 +146,8 @@
     <div class="d-flex justify-content-center">
       <div id="seccion_aportes" class="row justify-content-center fs-5 fw-bold mt-3 " style="max-width: 600px;">Aportes</div>
     </div>
-    
-    
-  
-    
 
-
-      </div>
+    
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- SDK FIREBASE -->
@@ -169,10 +184,9 @@
     </script>
 
     <script>
-      const nombre_pagina = 'Introducción al internet de las cosas';
+      const nombre_pagina = 'Internet';
     </script>
     <script src="../js/login.js"></script>
     <script src="../js/coments.js"></script>
-    
   </body>
 </html>

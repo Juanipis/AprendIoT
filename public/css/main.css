@@ -28,7 +28,7 @@ div#pagina_principal{
   background-color: #38A3A5;
 }
 div#comunidad{
-  background-color: #38A3A5;
+  background-color: #7eb912;
 }
 /*--Estetica navbar items*/
 .button_nav{
@@ -41,6 +41,13 @@ div#comunidad{
 
 }
 
+img#google-login{
+  background-color: #0060FF;
+}
+
+img#google-login:hover{
+  box-shadow: 0px 10px 10px -6px black;
+}
 
 
 

@@ -1,18 +1,94 @@
 .head_content {
   width: 100%;
   height: 250px;
-  background: url("../assets/media/iot_1.jpg") no-repeat center ;
-  background-size: cover;
-  
 }
+
+#banner_aux{
+  background: url("../assets/media/banner_Internet.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_Introduccion{
+  background: url("../assets/media/banner_Introduccion.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_Internet{
+  background: url("../assets/media/banner_Internet.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_Sensores{
+  background: url("../assets/media/banner_Sensores.png") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_Nube{
+  background: url("../assets/media/cloud.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_iot{
+  background: url("../assets/media/banner_iot.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_apli_iot{
+  background: url("../assets/media/banner_apl_iot.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_lab{
+  background: url("../assets/media/computer-motherboard.jpg") no-repeat center ;
+  background-size: cover;
+}
+
+#banner_despedida{
+  background: url("../assets/media/smart-microchip.jpg") no-repeat center ;
+  background-size: cover;
+}
+
 .head_content h1{
   color: #fff;
-  background-color:#608801;
   width: fit-content;
   margin-left: 60px;
   padding: 10px;
   border-radius: 10px;
 }
+
+#header_aux{
+  background-color:#608801;
+}
+
+#header_Introduccion{
+  background-color:#608801;
+}
+
+#header_Internet{
+  background-color:#000f63;
+}
+
+#header_Sensores{
+  background-color:#016888;
+}
+
+#header_Nube{
+  background-color:#016888;
+}
+
+#header_iot{
+  background-color:#016888;
+}
+#header_apli_iot{
+  background-color:#a13c1d;
+}
+#header_lab{
+  background-color:#a13c1d;
+}
+#header_despedida{
+  background-color:#0b68d3;
+}
+
 .atribution{
   color: #fff;
   margin-left: 70px ;

@@ -4,6 +4,25 @@
   width: 150px;
   border-radius: 100px;
 }
+
+/*Perfil*/
+.perfil  img{
+  
+  height: 100px;
+}
+.perfil .text{
+  text-align: center;
+}
+#puntaje{
+  border-style: solid;
+  border-color: blue;
+  border-radius: 100px;
+  border-width: 2px;
+}
+#nombre{
+  text-align: center;
+  font-size: 200%;
+}
 .text{
   max-width: 500px;
 }
