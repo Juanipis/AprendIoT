@@ -38,6 +38,11 @@
   background-size: cover;
 }
 
+#banner_lab{
+  background: url("../assets/media/computer-motherboard.jpg") no-repeat center ;
+  background-size: cover;
+}
+
 .head_content h1{
   color: #fff;
   width: fit-content;
@@ -72,7 +77,9 @@
 #header_apli_iot{
   background-color:#a13c1d;
 }
-
+#header_lab{
+  background-color:#a13c1d;
+}
 .atribution{
   color: #fff;
   margin-left: 70px ;
