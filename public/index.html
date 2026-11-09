@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es" id="main">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/icons/logo_aprendIoT.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>AprendIoT</title>
+  </head>
+  <body id="main_body">
+    <header>
+      <div class="top-header d-flex justify-content-center">
+        <img class="align-self-center" src="./assets/icons/logo_aprendIoT.svg" alt="Logo AprendIoT">
+        <h1 class="align-self-center">AprendIoT</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #22577A;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" style="color: white;">
+            <img src="./assets/icons/logo_aprendIoT.svg" alt="Logo AprendIoT" width="30" height="24" class="d-inline-block align-text-top">
+            AprendIoT
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./acerca.html">
+                  <div class="button_nav d-inline-flex" id="acerca_de">
+                    <div class=" icon p-2 bd-highlight">
+                      <img src="./assets/icons/flag.svg">
+                    </div>
+                    <div class="nav-text-item align-self-center">Acerca del OVA</div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <div class="button_nav d-inline-flex" id="pagina_principal">
+                    <div class=" icon p-2 bd-highlight">
+                      <img src="./assets/icons/house-door.svg">
+                    </div>
+                    <div class="nav-text-item align-self-center">Página principal</div>
+                  </div>
+                </a>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./comunidad.html">
+                  <div class="button_nav d-inline-flex" id="comunidad">
+                    <div class=" icon p-2 bd-highlight">
+                      <img src="./assets/icons/comunidad.svg">
+                    </div>
+                    <div class="nav-text-item align-self-center">Comunidad</div>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex flex-column mx-3 ">
+                <!-- Button trigger modal -->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item logged-out mx-2 my-2" style="display: none;">
+                    
+                    <button id="googleLogin" style="background: none; border: none;">
+                      <img src="./assets/icons/google_button.svg" id="google-login" alt="Google login">
+                    </button>
+                    
+                  </li>
+                  
+                  <li class="nav-item logged-in mx-2" style="display: none;">
+                    <!-- Button trigger modal logOut -->
+                    <button type="button" id="logout" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: blueviolet;">
+                      Cerrrar sesión
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <section class="column" style="margin-top: 10%;" >
+      <section class="index_content row justify-content-center align-items-center">
+
+        <article class="col" style="max-width: 560px; width:560px">
+          <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/vCVE6eLdKiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+
+        <article class="text d-flex flex-column">
+          <h1>Aprende sobre el internet de las cosas con <p class="pt-4"><strong><img src="./assets/icons/logo_aprendIoT.svg" alt=""> AprendIoT</p></strong></h1>
+          <p>
+            En un mundo donde la tecnología es una herramienta fundamental para la vida, AprendIoT es una 
+            plataforma que te ayudará a aprender sobre el internet de las cosas, 
+            especialmente a las personas que tienen una discapacidad auditiva.
+          </p>
+        </article>
+        
+      </section>
+      <section class="row justify-content-center" style="width: 100%;" >
+        <button class="m-4 rounded" id="start_button" onclick="window.location.href='./ova/introduccion.html'" ><strong>Aprende ahora</strong></button>
+      </section>
+    </section>
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- SDK FIREBASE -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <!-- Don't change the format for any other products. -->
+    <!-- etc. -->
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCu3IiwrAFGOejTXa5Fcmxbu4KNNu8XcaQ",
+        authDomain: "aprendiot.firebaseapp.com",
+        projectId: "aprendiot",
+        storageBucket: "aprendiot.appspot.com",
+        messagingSenderId: "563370566817",
+        appId: "1:563370566817:web:d4e7467105b0564ef5bce0",
+        measurementId: "G-82QECYBVVP"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const fs = firebase.firestore();
+    </script> 
+    <script src="./js/login.js"></script>
+
+  </body>
+</html>
